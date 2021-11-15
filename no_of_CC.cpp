@@ -1,5 +1,5 @@
 /*
- * Find the total number of connected components in the graph.
+ * Find the total number of connected components(CC) in the graph.
  *
  *Problem link ::   https://www.hackerearth.com/problem/algorithm/connected-components-in-a-graph/
  *
