@@ -1,11 +1,4 @@
-/*
- * Given N ,M . From a graph having N nodes and M edges such that no. of bridge will be maximum.
-
- *Idea :: connect N-1 edges linearly and connect left edges from (i=3) to j=(i-1); i++ ,j++
-
- * problem Link :: https://www.codechef.com/NOV21B/problems/MAXBRIDGE
- */
-
+// Toposort Implementation using bfs
 #include<algorithm>
 #include<bits/stdc++.h>
 #define ll long long 
