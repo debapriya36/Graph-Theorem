@@ -1,3 +1,7 @@
+/*
+ *problem link :     https://atcoder.jp/contests/abl/tasks/abl_c
+ * idea : count the number of CC as , only them to connect we can get multiple roads from 2 citys [ ans = cc-1 ]
+ */
 
 #include<algorithm>
 #include<bits/stdc++.h>
