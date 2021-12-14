@@ -1,10 +1,10 @@
-// kosaraju algo for finding Strongly Connected Component...
-/*
- *
- *
- * 
- * 
+
+/*Idea:::-
+ * Have a toposort and store in stack...
+ * create a transpose adjacency list ...
+ * call dfs in order that elems are present in stack[toposort order] and print .
 **/
+
 #include<algorithm>
 #include<bits/stdc++.h>
 #define ll long long 
