@@ -132,7 +132,7 @@ void dfs(ll pos,ll currPro)
    for(auto &val : v[pos])
    {
        ll next=currPro*val;
-     //  if(next>x)continue;
+       if(next>x)continue;
        dfs(pos+1,next);
 
    }
