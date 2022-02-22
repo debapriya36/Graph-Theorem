@@ -1,6 +1,6 @@
 // Dijkstra Algorithm : 
 // minimun dis from source node to other nodes .
-
+// not work for -ve Cycle
 const ll N=2e5;
 vector<ll>dis(N,1e18);
 
@@ -9,7 +9,7 @@ void Dijkstra_PQ(ll source, ll n)
     
     priority_queue<pair<ll,ll>,vector<pair<ll,ll>>,greater<pair<ll,ll>>> pq;
 
-    pq.push({source,0});
+    pq.push({0,source});
     dis[source]=0;
 
     while(pq.size())
@@ -26,7 +26,7 @@ void Dijkstra_PQ(ll source, ll n)
             if(dis[Node]>dis[node]+wt)
             {
                 dis[Node]=dis[node]+wt;
-                pq.push({Node,dis[Node]});
+                pq.push({dis[Node],Node});
             }
         }
     }
